@@ -1,14 +1,12 @@
 package com.example.scrollablelist;
 
 public class Applicant {
-    String name;
-    String email;
-    int image;
+    private final String name;
+    private final String email;
 
-    public Applicant(String name, String email, int image) {
+    public Applicant(String name, String email) {
         this.name = name;
         this.email = email;
-        this.image = image;
     }
 
     public String getName() {
@@ -17,9 +15,5 @@ public class Applicant {
 
     public String getEmail() {
         return email;
-    }
-
-    public int getImage() {
-        return image;
     }
 }
